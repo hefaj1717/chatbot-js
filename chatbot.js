@@ -9,7 +9,12 @@ let name = input();
 console.log("What a great name you have, " + name + "!");
 console.log("Let me guess your age.");
 console.log("Enter remainders of dividing your age by 3, 5 and 7.");
+let remainder3 = input();
+let remainder5 = input();
+let remainder7 = input();
+
+let age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105
 
 // reading all remainders
 
-console.log("Your age is {your_age}; that's a good time to start programming!");
+console.log("Your age is " + age + " that's a good time to start programming!");
